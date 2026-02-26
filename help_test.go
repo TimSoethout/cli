@@ -799,7 +799,6 @@ GLOBAL OPTIONS:
 
 func TestShowSubcommandHelp_GlobalOptions_HideHelpCommand(t *testing.T) {
 	cmd := &Command{
-		HideHelpCommand: true,
 		Flags: []Flag{
 			&StringFlag{
 				Name: "foo",
@@ -807,7 +806,8 @@ func TestShowSubcommandHelp_GlobalOptions_HideHelpCommand(t *testing.T) {
 		},
 		Commands: []*Command{
 			{
-				Name: "frobbly",
+				Name:            "frobbly",
+				HideHelpCommand: true,
 				Flags: []Flag{
 					&StringFlag{
 						Name:  "bar",

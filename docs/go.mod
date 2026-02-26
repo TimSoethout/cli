@@ -8,9 +8,3 @@ require (
 	github.com/urfave/cli-altsrc/v3 v3.0.1
 	github.com/urfave/cli/v3 v3.1.1
 )
-
-require (
-	github.com/BurntSushi/toml v1.5.0 // indirect
-	github.com/stretchr/testify v1.11.1 // indirect
-	gopkg.in/yaml.v3 v3.0.1 // indirect
-)
